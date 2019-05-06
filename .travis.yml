@@ -4,7 +4,7 @@ services:
   - docker
 
 script:
-  - docker build -t beevelop/ionic .
-  - docker run beevelop/ionic /bin/sh -c "ionic -v && ionic config set -g backend legacy && ionic start test blank --no-link --no-git --cordova && cd test && ionic cordova platform add android --no-resources && ionic cordova build android"
+  - docker build -t orinbou/ionic .
+  - docker run orinbou/ionic /bin/sh -c "ionic -v && ionic config set -g backend legacy && ionic start test blank --no-link --no-git --cordova && cd test && ionic cordova platform add android --no-resources && ionic cordova build android"
   
   
